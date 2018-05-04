@@ -1,0 +1,6 @@
+com\pscu\SeleniumQuickAssist\Runner\AfterSuite.class
+com\pscu\SeleniumQuickAssist\Runner\ExtendedCucumberRunner.class
+com\pscu\SeleniumQuickAssist\pageObjects\WebApp\QuickAssist_App.class
+com\pscu\SeleniumQuickAssist\Runner\BeforeSuite.class
+com\pscu\SeleniumQuickAssist\Runner\TestRunner_1.class
+com\pscu\SeleniumQuickAssist\Runner\TestRunner_2.class

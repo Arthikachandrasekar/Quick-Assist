@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.pscu.SeleniumQuickAssist.Runner.TestRunner_1
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.962 sec

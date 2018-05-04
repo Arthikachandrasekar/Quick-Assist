@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.096251">
+<testcase classname="Quick Assist Smoke Test Script" name="Login to Quick Assist Application through Ping Page" time="17.096251">
+<system-out><![CDATA[Given My WebApp 'QuickAssist_App' is open...................................passed
+When I select option 'QuicAssist Token EXternal' in dropdown 'SelectAuthenticationSystem' by 'text'.passed
+And I click 'ContinueBtn'...................................................passed
+And I enter 'SQAtest2' in field 'Ping_Username'.............................passed
+And I enter 'PSCU@1234' in field 'Ping_Password'............................passed
+And I enter '2113' in field 'Ping_ClientId'.................................passed
+And I click 'Ping_LogIN'....................................................passed
+Then I should see text 'sqatest2.21' present on page at 'QAssist_UserNameDisp'.passed
+Then I wait for '10' seconds................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

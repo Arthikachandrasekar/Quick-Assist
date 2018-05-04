@@ -1,0 +1,252 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 203657,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.applyHook(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Login to Quick Assist Application through Ping Page",
+        "description": "",
+        "id": "quick-assist-smoke-test-script;login-to-quick-assist-application-through-ping-page",
+        "after": [
+          {
+            "result": {
+              "duration": 129905,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.removeHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1296924609,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "My WebApp \u0027QuickAssist_App\u0027 is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QuickAssist_App",
+                  "offset": 11
+                }
+              ],
+              "location": "CommonSteps.my_webapp_is_open(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223191216,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select option \u0027QuicAssist Token EXternal\u0027 in dropdown \u0027SelectAuthenticationSystem\u0027 by \u0027text\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QuicAssist Token EXternal",
+                  "offset": 17
+                },
+                {
+                  "val": "SelectAuthenticationSystem",
+                  "offset": 57
+                },
+                {
+                  "val": "text",
+                  "offset": 89
+                }
+              ],
+              "location": "CommonSteps.I_select_option_in_dd_by(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 751465898,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click \u0027ContinueBtn\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ContinueBtn",
+                  "offset": 9
+                }
+              ],
+              "location": "CommonSteps.I_Click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205283074,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \u0027SQAtest2\u0027 in field \u0027Ping_Username\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SQAtest2",
+                  "offset": 9
+                },
+                {
+                  "val": "Ping_Username",
+                  "offset": 29
+                }
+              ],
+              "location": "CommonSteps.I_enter_in_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194259885,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter \u0027PSCU@1234\u0027 in field \u0027Ping_Password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PSCU@1234",
+                  "offset": 9
+                },
+                {
+                  "val": "Ping_Password",
+                  "offset": 30
+                }
+              ],
+              "location": "CommonSteps.I_enter_in_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167309811,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter \u00272113\u0027 in field \u0027Ping_ClientId\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2113",
+                  "offset": 9
+                },
+                {
+                  "val": "Ping_ClientId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.I_enter_in_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3477334689,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click \u0027Ping_LogIN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ping_LogIN",
+                  "offset": 9
+                }
+              ],
+              "location": "CommonSteps.I_Click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 768665850,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 14,
+                "value": "#And I wait for visibility of element \u0027SearchPopUp_Close\u0027"
+              },
+              {
+                "line": 15,
+                "value": "#And I click \u0027SearchPopUp_Close\u0027"
+              }
+            ],
+            "line": 16,
+            "name": "I should see text \u0027sqatest2.21\u0027 present on page at \u0027QAssist_UserNameDisp\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sqatest2.21",
+                  "offset": 19
+                },
+                {
+                  "val": "QAssist_UserNameDisp",
+                  "offset": 52
+                }
+              ],
+              "location": "CommonSteps.I_should_see_text_present_on_page_At(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10011482744,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I wait for \u002710\u0027 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 12
+                }
+              ],
+              "location": "CommonSteps.I_pause_for_seconds(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@PingPageLogin_QuickAssist"
+          }
+        ]
+      }
+    ],
+    "name": "Quick Assist Smoke Test Script",
+    "description": "Contains 4 TCs on Quick Assist to ensure environment \u0026 build stability",
+    "id": "quick-assist-smoke-test-script",
+    "keyword": "Feature",
+    "uri": "QuickAssist_Sanity.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@QuickAssist_Sanity"
+      }
+    ]
+  }
+]

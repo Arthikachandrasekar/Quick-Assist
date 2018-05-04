@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="7" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="5.301017">
+<testcase classname="Quick Assist Smoke Test Script" name="Login to Quick Assist Application through Ping Page" time="0.012344">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.my_webapp_is_open(CommonSteps.java:57)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.my_webapp_is_open(CommonSteps.java:53)&#13;&#10;&#9;... 45 more&#13;&#10;"><![CDATA[Given My WebApp 'QuickAssist_App' is open...................................failed
+When I select option 'QuicAssist Token EXternal' in dropdown 'SelectAuthenticationSystem' by 'text'.skipped
+And I click 'ContinueBtn'...................................................skipped
+And I enter 'SQAtest2' in field 'Ping_Username'.............................skipped
+And I enter 'PSCU@1234' in field 'Ping_Password'............................skipped
+And I enter '2113' in field 'Ping_ClientId'.................................skipped
+And I click 'Ping_LogIN'....................................................skipped
+Then I should see text 'sqatest2.21' present on page at 'QAssist_UserNameDisp'.skipped
+Then I wait for '10' seconds................................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.my_webapp_is_open(CommonSteps.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.my_webapp_is_open(CommonSteps.java:53)
+	... 45 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC1 - Search for a Customer's Account &amp; verify Card holder infomartion is displayed correctly in card holder info section" time="0.077624">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 63 more&#13;&#10;"><![CDATA[Given I click 'LeftPanel_SearchBtn'.........................................failed
+And I enter '4429005030009751' in field 'SearchPopUp_AccountNumberField'....skipped
+And I click 'SearchPopUp_Search_Btn'........................................skipped
+And I should see text 'Card Holder Search' present on page at 'SearchSuccessToast'.skipped
+And I should see text 'Found record' present on page at 'SearchSuccessToast2'.skipped
+And I wait for '5' seconds..................................................skipped
+And I should see text 'PRIMARY TESTACCOUNT' present on page at 'CardHolderInfo_Primary'.skipped
+And I should see text 'BOILING SPRINGS,SC 29316' present on page at 'CardHolderInfo_Primary_AddrLine2'.skipped
+And I should see text '(111) 111-1111' present on page at 'CardHolderInfo_HomePhone'.skipped
+And I should see text '(222) 222-2222' present on page at 'CardHolderInfo_Cell'.skipped
+And I should see text '(333) 333-3333' present on page at 'CardHolderInfo_Business'.skipped
+And I should see text 'XXX-XX-6789' present on page at 'CardHolderInfo_SSN'.skipped
+And I should see text '01/01/1970' present on page at 'CardHolderInfo_DOB'..skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 63 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC1 - Search for a Customer's Account &amp; verify Card holder infomartion is displayed correctly in card holder info section 2" time="0.033817">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 63 more&#13;&#10;"><![CDATA[Given I click 'LeftPanel_SearchBtn'.........................................failed
+And I enter '4108836000011270' in field 'SearchPopUp_AccountNumberField'....skipped
+And I click 'SearchPopUp_Search_Btn'........................................skipped
+And I should see text 'Card Holder Search' present on page at 'SearchSuccessToast'.skipped
+And I should see text 'Found record' present on page at 'SearchSuccessToast2'.skipped
+And I wait for '5' seconds..................................................skipped
+And I should see text 'JANE DOE' present on page at 'CardHolderInfo_Primary'.skipped
+And I should see text 'LANCASTER,SC 29720-5808' present on page at 'CardHolderInfo_Primary_AddrLine2'.skipped
+And I should see text '' present on page at 'CardHolderInfo_HomePhone'......skipped
+And I should see text '' present on page at 'CardHolderInfo_Cell'...........skipped
+And I should see text '' present on page at 'CardHolderInfo_Business'.......skipped
+And I should see text 'XXX-XX-1324' present on page at 'CardHolderInfo_SSN'.skipped
+And I should see text '01/01/1970' present on page at 'CardHolderInfo_DOB'..skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 63 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC2 - Add Secondary user to Account and verify successful addition" time="2.099779">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 45 more&#13;&#10;"><![CDATA[When I scroll to 'coordinates' - '0,400'....................................passed
+And I wait for '2' seconds..................................................passed
+Given I click 'AccountUsers_AddUser'........................................failed
+Then I should see text 'Add Account User' present on page at 'AddUserPopUp_Header'.skipped
+When I select 'AddUserPopUp_SelectType_Secondary' by clicking 'AddUserPopUp_SelectType'.skipped
+And I enter 'TestUserFName' in field 'AddUserPopUp_FirstName'...............skipped
+And I enter 'TestUserLName' in field 'AddUserPopUp_LastName'................skipped
+And I enter '123456789' in field 'AddUserPopUp_SSN'.........................skipped
+And I enter '05/25/1985' in field 'AddUserPopUp_DOB'........................skipped
+And I select 'AddUserPopUp_CBR_DoNotReport' by clicking 'AddUserPopUp_CBR'..skipped
+And I enter '1111231234' in field 'AddUserPopUp_HomePhone'..................skipped
+And I enter '3213211234' in field 'AddUserPopUp_CellPhone'..................skipped
+And I enter '1233211234' in field 'AddUserPopUp_WorkPhone'..................skipped
+And I enter 'test@testSecondary.user' in field 'AddUserPopUp_Email'.........skipped
+And I click 'AddUserPopUp_Confirm'..........................................skipped
+And I should see text 'Secondary User Added Successfully' present on page at 'AddUser_SuccessMessage'.skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 45 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC1 - Search for a Customer's Account &amp; verify Card holder infomartion is displayed correctly in card holder info section" time="0.035411">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 63 more&#13;&#10;"><![CDATA[Given I click 'LeftPanel_SearchBtn'.........................................failed
+And I enter '4429005030009751' in field 'SearchPopUp_AccountNumberField'....skipped
+And I click 'SearchPopUp_Search_Btn'........................................skipped
+And I should see text 'Card Holder Search' present on page at 'SearchSuccessToast'.skipped
+And I should see text 'Found record' present on page at 'SearchSuccessToast2'.skipped
+And I wait for '5' seconds..................................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 63 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC4 - Verify deleting the additional card holder is successful (TC4 - Delete Secondary user)" time="3.020907">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 45 more&#13;&#10;"><![CDATA[Given I scroll to 'coordinates' - '0,500'...................................passed
+And I wait for '3' seconds..................................................passed
+Given I click 'AccountUsers_DeleteUser'.....................................failed
+Then I should see element 'AccountUsers_DeleteUserPopUpHeader' present on page_.skipped
+And I click 'AccountUsers_DeleteUserPopUpConfirm'...........................skipped
+Then I should see text 'Account User' present on page at 'AccountUsers_DeleteConfirmation1'.skipped
+Then I should see text 'Delete Success' present on page at 'AccountUsers_DeleteConfirmation2'.skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 45 more
+]]></failure>
+</testcase>
+<testcase classname="Quick Assist Smoke Test Script" name="TC3 - Verify one time payment request is successful" time="0.021135">
+<failure message="cucumber.runtime.CucumberException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;Caused by: java.lang.NullPointerException&#13;&#10;&#9;at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)&#13;&#10;&#9;... 45 more&#13;&#10;"><![CDATA[Given I click 'QAssist_MainMenu_Payments'...................................failed
+And I scroll to 'coordinates' - '0,500'.....................................skipped
+And I click 'Payments_OneTimePaymentW_AmountDD'.............................skipped
+And I wait for '2' seconds..................................................skipped
+And I click 'Payments_OneTimePaymentW_MinimumPayment'.......................skipped
+And I wait for '10' seconds.................................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:310)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at com.pscu.SeleniumQuickAssist.Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+	at com.pscu.seleniumcucumber.stepDefinitions.CommonSteps.I_Click(CommonSteps.java:305)
+	... 45 more
+]]></failure>
+</testcase>
+</testsuite>
