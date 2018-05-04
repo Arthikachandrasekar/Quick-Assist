@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.096251">
-<testcase classname="Quick Assist Smoke Test Script" name="Login to Quick Assist Application through Ping Page" time="17.096251">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.851293">
+<testcase classname="Quick Assist Smoke Test Script" name="Login to Quick Assist Application through Ping Page" time="16.851293">
 <system-out><![CDATA[Given My WebApp 'QuickAssist_App' is open...................................passed
 When I select option 'QuicAssist Token EXternal' in dropdown 'SelectAuthenticationSystem' by 'text'.passed
 And I click 'ContinueBtn'...................................................passed
